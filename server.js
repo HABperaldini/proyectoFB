@@ -8,6 +8,11 @@ const app = express();
 
 const { PORT } = process.env;
 
+// login
+app.get("/login", function (req, res) {
+  res.send("Login");
+});
+
 // algo
 app.get("/", function (req, res) {
   res.send("Hello World");
